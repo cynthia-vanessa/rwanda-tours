@@ -8,7 +8,7 @@ console.log(values)
 }
 
     return(
-        <Dashboardlayout>
+        
 <Form onFinish={onFinish}>
 <Form.Item name="title" label="Title" rules={[{ required: true}]}>
     <Input/>
@@ -35,7 +35,7 @@ Register Now
 </Form>
 
 
-        </Dashboardlayout>
+    
 
     )
 }

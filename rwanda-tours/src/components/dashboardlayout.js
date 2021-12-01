@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import"./dashboardlayout.css";
 import ReactDOM from 'react-dom';
+import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import { Layout, Menu } from 'antd';
 import {
@@ -27,14 +28,14 @@ const toggle=()=>{
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1" icon={<UserOutlined />}>
-              nav 1
+            <              Menu.Item key="1" icon={<UserOutlined />}>
+<Link to ="../dashboard/Newtour">Create tour</Link>
             </Menu.Item>
             <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-              nav 2
+            <Link to ="../dashboard/Alltours">Manage tours</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<UploadOutlined />}>
-              nav 3
+            <Link to ="../home">Log out</Link>
             </Menu.Item>
           </Menu>
         </Sider>
